@@ -11,7 +11,7 @@ N=length(y);
 %% Our method
 y_envo= abs(hilbert(y))-mean(abs(hilbert(y))); % obtain the noisy fault impulse signal envelope
 y_h=  hilbert(y_envo);                         % remove the redundant conjugate frequencies  
-f_sample=[0:1:2000];                           % set the grid
+f_sample=[0:2:2000];                           % set the grid
 [res_x,res_sample] =fault_frequency_learning(y_h,f_sample,Fs);
 
 
