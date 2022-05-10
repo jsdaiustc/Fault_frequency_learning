@@ -98,7 +98,7 @@ while ~converged && iter<maxiter
             Aa= exp(1i*2*pi*T_all/Fs*fn_all_temp)/sqrt(N);
             ind_unactive= norm( y-Aa*(pinv(Aa)*y), 'fro' )^2/ norm(y,'fro')^2;
             threshold=length(fn_all_temp)/T;
-            if  ind_unactive>(1-threshold*2) || unactive==1 
+            if  ind_unactive>(1-threshold*5) || unactive==1 
                 delta=ones(N,1)*1e10;
                 break;
             end          
