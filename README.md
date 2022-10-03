@@ -1,5 +1,5 @@
 # Fault_frequency_learning
-MATLAB codes for "Bearing fault diagnosis with frequency sparsity learning"
+MATLAB codes for "Bearing fault diagnosis with frequency sparsity learning", IEEE Transactions on Instrumentation and Measurement, 2022.
 
 "Experiment_1_Fig11.m" will generate Fig. 11 in the paper. The dataset is downloaded from the NSF I/UCR Center for Maintenance Systems.
 
